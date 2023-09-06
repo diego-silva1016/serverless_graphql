@@ -16,6 +16,13 @@ functions:
       - httpApi:
           path: /
           method: GET
+  websocket:
+    handler: src/index.webSocket
+    events:
+      - websocket:
+          route: $connect
+      - websocket:
+          route: $disconnect
       - websocket:
           route: $default
 # Omit the following lines if you aren't using TS!
