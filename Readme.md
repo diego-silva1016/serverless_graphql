@@ -43,3 +43,4 @@ yarn start
 * [Apollo Graphql](https://www.apollographql.com/docs/apollo-server/)
 * [Serverless](https://www.serverless.com/)
 * [Firebase](https://firebase.google.com/?hl=pt)
+* [React](https://react.dev/)
