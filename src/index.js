@@ -180,10 +180,8 @@ app.use(
   expressMiddleware(server),
 );
 
-exports.graphqlHandler = serverlessExpress({ app });
+// exports.graphqlHandler = serverlessExpress({ app });
 
-
-
-// const PORT = 4000;
-// // Modified server startup
-// new Promise((resolve) => httpServer.listen({ port: PORT }, resolve));
+const PORT = 4000;
+// Modified server startup
+new Promise((resolve) => httpServer.listen({ port: PORT }, resolve));
