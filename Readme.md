@@ -1,4 +1,4 @@
-# Título do projeto
+# Sistema de Votos e Enquetes
 
 Esse projeto é uma api Graphql responsável por criar enquetes e computar votos em tempo real. As informações são armazenadas no Realtime database do firebase. Para publicar ele foi integrado ao framework serverless para ser publicado na AWS Lambda
 
@@ -37,6 +37,12 @@ yarn start
 ```
 
 ![Alt text](image.png)
+
+## Arquitetura dos Componentes
+
+Arquitetura de compoenetes segue o modelo de comunicação conforme demonstrado no diagrama abaixo:
+![DiagramaArquiteturaBackEnd](https://github.com/diego-silva1016/serverless_graphql/assets/10471827/4016e273-45eb-466f-9ffd-bc19bd42270e)
+
 
 ## 🛠️ Construído com
 
