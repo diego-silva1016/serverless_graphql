@@ -24,6 +24,14 @@ Para iniciar o servidor, rode o comando:
 node src/index.js
 ```
 
+Para acessar a documentação acesse: 
+
+```
+http://localhost:4000/
+```
+
+![Alt text](image-1.png)
+
 Para iniciar o front end da aplicação, entre na pasta voting-front e rode o comando:
 
 ```
