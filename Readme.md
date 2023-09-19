@@ -50,3 +50,12 @@ Arquitetura de compoenetes segue o modelo de comunicação conforme demonstrado 
 * [Serverless](https://www.serverless.com/)
 * [Firebase](https://firebase.google.com/?hl=pt)
 * [React](https://react.dev/)
+
+## Autores
+
+* Andrew Costa Silva
+* Arthur Guterres Boeck
+* Danielson Augusto
+* Diego Ribeiro Alvarenga Silva
+* Guilherme Bruno Rodrigues Silva
+* Leandro Molinari
