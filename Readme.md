@@ -48,9 +48,22 @@ yarn start
 
 ## Arquitetura dos Componentes
 
-Arquitetura de compoenetes segue o modelo de comunicação conforme demonstrado no diagrama abaixo:
+Arquitetura de componentes segue o modelo de comunicação conforme demonstrado no diagrama abaixo:
 ![DiagramaArquiteturaBackEnd](https://github.com/diego-silva1016/serverless_graphql/assets/10471827/4016e273-45eb-466f-9ffd-bc19bd42270e)
 
+## Visão Geral da Arquitetura
+
+A documentação de visão geral da arquitetura tem como objetivo descrever como nossa solução do sistema de criação e votação de enquetes em tempo real funciona. São apresentados os 3 principais componentes da arquitetura frontend, backend da solução que interagem conforme a seguinte esquematização:
+
+```
+   ReactJS SPA => Aplicação Serverless => Instancia do Firebase
+```
+
+A Single Page Application (SPA), é a interface de interação dos usuários executada via browser. Seu objetivo, é possibilitar que os usuários criem, votem e acompanhem as enquetes em tempo real. Essa aplicação utiliza ReactJS para renderização e o Apollo Client para a comunicação com servidor GraphQL, para esse último implementou-se queries, mutations e subscriptions para a funcionalidade das enquetes e votações.
+
+A aplicação serverless, é responsável por processar as requisições da aplicação SPA. O servidor utiliza algumas bibliotecas de apoio para o processamento de requisições do cliente como express + serverless-express, WS e o Apollo Server. Dessas bibliotecas, destacam-se algumas implementações como o uso do resolvers para o processamento de query e mutation solicitadas pelo cliente, além do uso de subscription para as atualizações das enquetes e votações em tempo real.
+
+Por fim, o último componente utilizado é a instância do Firebase, nele são armazenadas as enquetes organizadas por título. Cada enquete possui as opções e a quantidade de votos feita pelos os usuários.
 
 ## 🛠️ Construído com
 
